@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 2 failed,  4 skipped,  19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.OrganisationTest.TestScriptForOrganisation" class="method navigator-link" hash-for-method="createOrg">createOrg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="LearnConfigAnnotationsWithBaseClass.TestScriptForContacts" class="method navigator-link" hash-for-method="executeForCreatingContact">executeForCreatingContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.OrganisationTest.TestScriptForOrganisation" class="method navigator-link" hash-for-method="createOrg">createOrg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.OrganisationTest.TestScriptForOrganisation" class="method navigator-link" hash-for-method="createOrg">createOrg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="LearnConfigAnnotationsWithBaseClass.TestScriptForContacts" class="method navigator-link" hash-for-method="executeForCreatingContact">executeForCreatingContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="LearnConfigAnnotationsWithBaseClass.TestScriptForContacts" class="method navigator-link" hash-for-method="executeForCreatingContact">executeForCreatingContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.ProductsTest.TestScriptForProducts" class="method navigator-link" hash-for-method="addProductName">addProductName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.ProductsTest.TestScriptForProducts" class="method navigator-link" hash-for-method="addProductWithCredentials">addProductWithCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.ProductsTest.TestScriptForProducts" class="method navigator-link" hash-for-method="addProductWithDate">addProductWithDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.ServicesTest.TestScriptForServices" class="method navigator-link" hash-for-method="addServiceName">addServiceName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.ServicesTest.TestScriptForServices" class="method navigator-link" hash-for-method="addServicesWithCredentials">addServicesWithCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.ServicesTest.TestScriptForServices" class="method navigator-link" hash-for-method="addServiceswithDate">addServiceswithDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="LearnTestNGScreenshots.TestNGScreenshot" class="method navigator-link" hash-for-method="amazonPage">amazonPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.ContactTest.TestScriptForCont" class="method navigator-link" hash-for-method="createContact">createContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.ContactTest.TestScriptForCont" class="method navigator-link" hash-for-method="createContactWithDate">createContactWithDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.ContactTest.TestScriptForCont" class="method navigator-link" hash-for-method="createContactWithOrgCredentials">createContactWithOrgCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.LeadsTest.TestScriptForLeads" class="method navigator-link" hash-for-method="createLeads">createLeads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.LeadsTest.TestScriptForLeads" class="method navigator-link" hash-for-method="createLeadsWithContact">createLeadsWithContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.LeadsTest.TestScriptForLeads" class="method navigator-link" hash-for-method="createLeadsWithCredenials">createLeadsWithCredenials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.OrganisationTest.TestScriptForOrganisation" class="method navigator-link" hash-for-method="createOrgWithContact">createOrgWithContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.OrganisationTest.TestScriptForOrganisation" class="method navigator-link" hash-for-method="createOrgWithCredentials">createOrgWithCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.CRM.OrganisationTest.TestScriptForOrganisation" class="method navigator-link" hash-for-method="deleteOrg">deleteOrg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="LearnConfigAnnotationsWithBaseClass.TestScriptForContacts" class="method navigator-link" hash-for-method="executeForCreatingContactWithDate">executeForCreatingContactWithDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="LearnConfigAnnotationsWithBaseClass.TestScriptForOrg" class="method navigator-link" hash-for-method="executeForCreatingOrg">executeForCreatingOrg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="LearnConfigAnnotationsWithBaseClass.TestScriptForOrg" class="method navigator-link" hash-for-method="executeForCreatingOrgWithIndustry">executeForCreatingOrgWithIndustry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">LearnConfigAnnotationsWithBaseClass.TestScriptForContacts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="executeForCreatingContact">
+                  </a> <!-- executeForCreatingContact -->
+                  <span class="method-name">executeForCreatingContact</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [HRM] but found [Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM]
+	at LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact(TestScriptForContacts.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.CRM.OrganisationTest.TestScriptForOrganisation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrg">
+                  </a> <!-- createOrg -->
+                  <span class="method-name">createOrg</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_60095] but found [Facebook_6009]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:119)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">LearnConfigAnnotationsWithBaseClass.TestScriptForContacts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="executeForCreatingContact">
+                  </a> <!-- executeForCreatingContact -->
+                  <span class="method-name">executeForCreatingContact</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [HRM] but found [Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM]
+	at LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact(TestScriptForContacts.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="executeForCreatingContact">
+                  </a> <!-- executeForCreatingContact -->
+                  <span class="method-name">executeForCreatingContact</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [HRM] but found [Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM]
+	at LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact(TestScriptForContacts.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.CRM.OrganisationTest.TestScriptForOrganisation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrg">
+                  </a> <!-- createOrg -->
+                  <span class="method-name">createOrg</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_10365] but found [Facebook_1036]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:119)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrg">
+                  </a> <!-- createOrg -->
+                  <span class="method-name">createOrg</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_30095] but found [Facebook_3009]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:119)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.CRM.LeadsTest.TestScriptForLeads</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createLeads">
+                  </a> <!-- createLeads -->
+                  <span class="method-name">createLeads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createLeadsWithContact">
+                  </a> <!-- createLeadsWithContact -->
+                  <span class="method-name">createLeadsWithContact</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createLeadsWithCredenials">
+                  </a> <!-- createLeadsWithCredenials -->
+                  <span class="method-name">createLeadsWithCredenials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LearnConfigAnnotationsWithBaseClass.TestScriptForContacts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="executeForCreatingContactWithDate">
+                  </a> <!-- executeForCreatingContactWithDate -->
+                  <span class="method-name">executeForCreatingContactWithDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LearnTestNGScreenshots.TestNGScreenshot</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="amazonPage">
+                  </a> <!-- amazonPage -->
+                  <span class="method-name">amazonPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.CRM.ServicesTest.TestScriptForServices</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addServiceName">
+                  </a> <!-- addServiceName -->
+                  <span class="method-name">addServiceName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addServicesWithCredentials">
+                  </a> <!-- addServicesWithCredentials -->
+                  <span class="method-name">addServicesWithCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addServiceswithDate">
+                  </a> <!-- addServiceswithDate -->
+                  <span class="method-name">addServiceswithDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LearnConfigAnnotationsWithBaseClass.TestScriptForOrg</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="executeForCreatingOrg">
+                  </a> <!-- executeForCreatingOrg -->
+                  <span class="method-name">executeForCreatingOrg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="executeForCreatingOrgWithIndustry">
+                  </a> <!-- executeForCreatingOrgWithIndustry -->
+                  <span class="method-name">executeForCreatingOrgWithIndustry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.CRM.OrganisationTest.TestScriptForOrganisation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrgWithContact">
+                  </a> <!-- createOrgWithContact -->
+                  <span class="method-name">createOrgWithContact</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrgWithCredentials">
+                  </a> <!-- createOrgWithCredentials -->
+                  <span class="method-name">createOrgWithCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteOrg">
+                  </a> <!-- deleteOrg -->
+                  <span class="method-name">deleteOrg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.CRM.ContactTest.TestScriptForCont</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createContact">
+                  </a> <!-- createContact -->
+                  <span class="method-name">createContact</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createContactWithDate">
+                  </a> <!-- createContactWithDate -->
+                  <span class="method-name">createContactWithDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createContactWithOrgCredentials">
+                  </a> <!-- createContactWithOrgCredentials -->
+                  <span class="method-name">createContactWithOrgCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.CRM.ProductsTest.TestScriptForProducts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductName">
+                  </a> <!-- addProductName -->
+                  <span class="method-name">addProductName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductWithCredentials">
+                  </a> <!-- addProductWithCredentials -->
+                  <span class="method-name">addProductWithCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductWithDate">
+                  </a> <!-- addProductWithDate -->
+                  <span class="method-name">addProductWithDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.CRM.ContactTest.TestScriptForCont&quot;/&gt;
+      &lt;class name=&quot;com.CRM.LeadsTest.TestScriptForLeads&quot;/&gt;
+      &lt;class name=&quot;com.CRM.OrganisationTest.TestScriptForOrganisation&quot;/&gt;
+      &lt;class name=&quot;com.CRM.ProductsTest.TestScriptForProducts&quot;/&gt;
+      &lt;class name=&quot;com.CRM.ServicesTest.TestScriptForServices&quot;/&gt;
+      &lt;class name=&quot;LearnConfigAnnotationsWithBaseClass.TestScriptForContacts&quot;/&gt;
+      &lt;class name=&quot;LearnConfigAnnotationsWithBaseClass.TestScriptForOrg&quot;/&gt;
+      &lt;class name=&quot;LearnTestNGScreenshots.TestNGScreenshot&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addProductWithCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addProductWithDate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addServicesWithCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addServiceswithDate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createContactWithDate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createContactWithOrgCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createLeadsWithContact</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createLeadsWithCredenials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createOrgWithContact</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createOrgWithCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteOrg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addProductName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addServiceName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createContact</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createLeads</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createOrg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createContactWithOrgCredentials')
+data.setCell(0, 2, 'com.CRM.ContactTest.TestScriptForCont')
+data.setCell(0, 3, 50188);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'deleteOrg')
+data.setCell(1, 2, 'com.CRM.OrganisationTest.TestScriptForOrganisation')
+data.setCell(1, 3, 38106);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addProductName')
+data.setCell(2, 2, 'com.CRM.ProductsTest.TestScriptForProducts')
+data.setCell(2, 3, 16243);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createContact')
+data.setCell(3, 2, 'com.CRM.ContactTest.TestScriptForCont')
+data.setCell(3, 3, 15774);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addProductWithDate')
+data.setCell(4, 2, 'com.CRM.ProductsTest.TestScriptForProducts')
+data.setCell(4, 3, 14252);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createLeadsWithCredenials')
+data.setCell(5, 2, 'com.CRM.LeadsTest.TestScriptForLeads')
+data.setCell(5, 3, 14126);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createOrgWithCredentials')
+data.setCell(6, 2, 'com.CRM.OrganisationTest.TestScriptForOrganisation')
+data.setCell(6, 3, 14010);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addProductWithCredentials')
+data.setCell(7, 2, 'com.CRM.ProductsTest.TestScriptForProducts')
+data.setCell(7, 3, 13948);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createOrgWithContact')
+data.setCell(8, 2, 'com.CRM.OrganisationTest.TestScriptForOrganisation')
+data.setCell(8, 3, 13932);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'createOrg')
+data.setCell(9, 2, 'com.CRM.OrganisationTest.TestScriptForOrganisation')
+data.setCell(9, 3, 13773);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'createOrg')
+data.setCell(10, 2, 'com.CRM.OrganisationTest.TestScriptForOrganisation')
+data.setCell(10, 3, 13279);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'createOrg')
+data.setCell(11, 2, 'com.CRM.OrganisationTest.TestScriptForOrganisation')
+data.setCell(11, 3, 13265);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'createLeads')
+data.setCell(12, 2, 'com.CRM.LeadsTest.TestScriptForLeads')
+data.setCell(12, 3, 13199);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'addServicesWithCredentials')
+data.setCell(13, 2, 'com.CRM.ServicesTest.TestScriptForServices')
+data.setCell(13, 3, 12902);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'addServiceswithDate')
+data.setCell(14, 2, 'com.CRM.ServicesTest.TestScriptForServices')
+data.setCell(14, 3, 12829);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'createContactWithDate')
+data.setCell(15, 2, 'com.CRM.ContactTest.TestScriptForCont')
+data.setCell(15, 3, 12785);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'createLeadsWithContact')
+data.setCell(16, 2, 'com.CRM.LeadsTest.TestScriptForLeads')
+data.setCell(16, 3, 12778);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'addServiceName')
+data.setCell(17, 2, 'com.CRM.ServicesTest.TestScriptForServices')
+data.setCell(17, 3, 11683);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'amazonPage')
+data.setCell(18, 2, 'LearnTestNGScreenshots.TestNGScreenshot')
+data.setCell(18, 3, 3282);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'executeForCreatingContact')
+data.setCell(19, 2, 'LearnConfigAnnotationsWithBaseClass.TestScriptForContacts')
+data.setCell(19, 3, 18);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'executeForCreatingContact')
+data.setCell(20, 2, 'LearnConfigAnnotationsWithBaseClass.TestScriptForContacts')
+data.setCell(20, 3, 15);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'executeForCreatingContact')
+data.setCell(21, 2, 'LearnConfigAnnotationsWithBaseClass.TestScriptForContacts')
+data.setCell(21, 3, 13);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'executeForCreatingOrg')
+data.setCell(22, 2, 'LearnConfigAnnotationsWithBaseClass.TestScriptForOrg')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'executeForCreatingContactWithDate')
+data.setCell(23, 2, 'LearnConfigAnnotationsWithBaseClass.TestScriptForContacts')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'executeForCreatingOrgWithIndustry')
+data.setCell(24, 2, 'LearnConfigAnnotationsWithBaseClass.TestScriptForOrg')
+data.setCell(24, 3, 0);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createLeadsWithCredenials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addServiceswithDate</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">Data is saved.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createOrgWithCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createLeadsWithContact</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addProductWithCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">executeForCreatingContactWithDate</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">executeForCreatingOrgWithIndustry</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">deleteOrg</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">Organisation deleted Successfully.......</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addProductName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addServiceName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">Data is saved.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addServicesWithCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">Data is saved.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createLeads</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createContact</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createOrgWithContact</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">amazonPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createContactWithDate</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addProductWithDate</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createContactWithOrgCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">executeForCreatingOrg</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Success.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">executeForCreatingContact</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Fails.....</span>
+                <span class="reporter-method-output">Screenshot is Taken....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createOrg</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Fails.....</span>
+                <span class="reporter-method-output">Screenshot is Taken....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createOrg</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Skipped.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createOrg</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Skipped.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">executeForCreatingContact</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Skipped.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">executeForCreatingContact</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">I--Test Execution Starts.....</span>
+                <span class="reporter-method-output">I--Test Execution Skipped.....</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">24 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.CRM.LeadsTest.TestScriptForLeads</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">LearnConfigAnnotationsWithBaseClass.TestScriptForContacts</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.CRM.ServicesTest.TestScriptForServices</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.CRM.OrganisationTest.TestScriptForOrganisation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">LearnConfigAnnotationsWithBaseClass.TestScriptForOrg</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.CRM.ProductsTest.TestScriptForProducts</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.CRM.ContactTest.TestScriptForCont</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">255 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome)</span>
+                <span class="method-start">271 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">4973 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createContact</span>
+                <span class="method-start">10398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">26172 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">28506 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createContactWithDate</span>
+                <span class="method-start">32830 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">45615 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">47747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createContactWithOrgCredentials</span>
+                <span class="method-start">51516 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">101704 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">103697 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.CRM.LeadsTest.TestScriptForLeads</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome)</span>
+                <span class="method-start">104098 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">105858 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createLeads</span>
+                <span class="method-start">110262 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">123461 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">125903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createLeadsWithContact</span>
+                <span class="method-start">130359 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">143137 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">145373 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createLeadsWithCredenials</span>
+                <span class="method-start">149635 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">163761 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">165689 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.CRM.OrganisationTest.TestScriptForOrganisation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome)</span>
+                <span class="method-start">166063 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">167375 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrg</span>
+                <span class="method-start">172710 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">185975 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">188264 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrg</span>
+                <span class="method-start">192705 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">205984 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">208330 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createOrg</span>
+                <span class="method-start">212793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">226896 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">229199 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrgWithContact</span>
+                <span class="method-start">233786 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">247719 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">250178 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrgWithCredentials</span>
+                <span class="method-start">254779 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">268790 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">270887 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteOrg</span>
+                <span class="method-start">275510 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">313616 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">319261 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.CRM.ProductsTest.TestScriptForProducts</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome)</span>
+                <span class="method-start">319667 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">320967 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProductName</span>
+                <span class="method-start">326000 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">342244 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">344616 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProductWithCredentials</span>
+                <span class="method-start">349085 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">363035 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">365319 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProductWithDate</span>
+                <span class="method-start">369917 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">384171 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">386570 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.CRM.ServicesTest.TestScriptForServices</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome)</span>
+                <span class="method-start">386980 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">388297 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addServiceName</span>
+                <span class="method-start">393375 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">405058 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">407187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addServicesWithCredentials</span>
+                <span class="method-start">411465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">424367 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">426568 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addServiceswithDate</span>
+                <span class="method-start">430764 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">443594 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">445766 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LearnConfigAnnotationsWithBaseClass.TestScriptForContacts</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome)</span>
+                <span class="method-start">446072 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">447409 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">executeForCreatingContact</span>
+                <span class="method-start">452440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">452453 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">457488 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">executeForCreatingContact</span>
+                <span class="method-start">461500 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">461518 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">466521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">executeForCreatingContact</span>
+                <span class="method-start">470948 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">471163 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">475940 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">executeForCreatingContactWithDate</span>
+                <span class="method-start">480388 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">480388 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">485327 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LearnConfigAnnotationsWithBaseClass.TestScriptForOrg</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome)</span>
+                <span class="method-start">485634 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">486880 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">executeForCreatingOrg</span>
+                <span class="method-start">492125 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">492129 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">497072 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">executeForCreatingOrgWithIndustry</span>
+                <span class="method-start">502151 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">502157 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">507217 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LearnTestNGScreenshots.TestNGScreenshot</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">amazonPage</span>
+                <span class="method-start">507470 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.CRM.ContactTest.TestScriptForCont</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">510752 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">510842 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

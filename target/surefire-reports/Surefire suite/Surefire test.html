@@ -1,0 +1,699 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/2/4</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 08 12:29:39 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>510 seconds (510513 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact()'><b>executeForCreatingContact</b><br>Test class: LearnConfigAnnotationsWithBaseClass.TestScriptForContacts<br/>
+<a href="#Output-1534507153" onClick='toggleBox("Output-1534507153", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1534507153" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1534507153">
+I--Test Execution Starts.....<br/>
+I--Test Execution Fails.....<br/>
+Screenshot is Taken....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [HRM] but found [Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM]
+	at LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact(TestScriptForContacts.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1534507153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1534507153'><pre>java.lang.AssertionError: expected [HRM] but found [Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact(TestScriptForContacts.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>LearnConfigAnnotationsWithBaseClass.TestScriptForContacts@6ca8564a</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg()'><b>createOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-682976813" onClick='toggleBox("Output-682976813", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-682976813" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-682976813">
+I--Test Execution Starts.....<br/>
+I--Test Execution Fails.....<br/>
+Screenshot is Taken....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_60095] but found [Facebook_6009]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:119)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace682976813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace682976813'><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_60095] but found [Facebook_6009]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:119)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>13</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@3f197a46</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.CRM.LeadsTest.TestScriptForLeads.createLeadsWithCredenials()'><b>createLeadsWithCredenials</b><br>Test class: com.CRM.LeadsTest.TestScriptForLeads<br/>
+<a href="#Output-216815884" onClick='toggleBox("Output-216815884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-216815884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-216815884">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.CRM.LeadsTest.TestScriptForLeads@5e82df6a</td></tr>
+<tr>
+<td title='com.CRM.ServicesTest.TestScriptForServices.addServiceswithDate()'><b>addServiceswithDate</b><br>Test class: com.CRM.ServicesTest.TestScriptForServices<br/>
+<a href="#Output-1702926498" onClick='toggleBox("Output-1702926498", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1702926498" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1702926498">
+I--Test Execution Starts.....<br/>
+Data is saved.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.CRM.ServicesTest.TestScriptForServices@50a638b5</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrgWithCredentials()'><b>createOrgWithCredentials</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-1223572525" onClick='toggleBox("Output-1223572525", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1223572525" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1223572525">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@3f197a46</td></tr>
+<tr>
+<td title='com.CRM.LeadsTest.TestScriptForLeads.createLeadsWithContact()'><b>createLeadsWithContact</b><br>Test class: com.CRM.LeadsTest.TestScriptForLeads<br/>
+<a href="#Output-1921167141" onClick='toggleBox("Output-1921167141", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1921167141" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1921167141">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.CRM.LeadsTest.TestScriptForLeads@5e82df6a</td></tr>
+<tr>
+<td title='com.CRM.ProductsTest.TestScriptForProducts.addProductWithCredentials()'><b>addProductWithCredentials</b><br>Test class: com.CRM.ProductsTest.TestScriptForProducts<br/>
+<a href="#Output-517615773" onClick='toggleBox("Output-517615773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-517615773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-517615773">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.CRM.ProductsTest.TestScriptForProducts@636be97c</td></tr>
+<tr>
+<td title='LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContactWithDate()'><b>executeForCreatingContactWithDate</b><br>Test class: LearnConfigAnnotationsWithBaseClass.TestScriptForContacts<br/>
+<a href="#Output-414040586" onClick='toggleBox("Output-414040586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-414040586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-414040586">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LearnConfigAnnotationsWithBaseClass.TestScriptForContacts@6ca8564a</td></tr>
+<tr>
+<td title='LearnConfigAnnotationsWithBaseClass.TestScriptForOrg.executeForCreatingOrgWithIndustry()'><b>executeForCreatingOrgWithIndustry</b><br>Test class: LearnConfigAnnotationsWithBaseClass.TestScriptForOrg<br/>
+<a href="#Output-619158093" onClick='toggleBox("Output-619158093", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-619158093" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-619158093">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LearnConfigAnnotationsWithBaseClass.TestScriptForOrg@50b472aa</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.deleteOrg()'><b>deleteOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-845442767" onClick='toggleBox("Output-845442767", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-845442767" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-845442767">
+I--Test Execution Starts.....<br/>
+Organisation deleted Successfully.......<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@3f197a46</td></tr>
+<tr>
+<td title='com.CRM.ProductsTest.TestScriptForProducts.addProductName()'><b>addProductName</b><br>Test class: com.CRM.ProductsTest.TestScriptForProducts<br/>
+<a href="#Output-316929198" onClick='toggleBox("Output-316929198", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-316929198" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-316929198">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.CRM.ProductsTest.TestScriptForProducts@636be97c</td></tr>
+<tr>
+<td title='com.CRM.ServicesTest.TestScriptForServices.addServiceName()'><b>addServiceName</b><br>Test class: com.CRM.ServicesTest.TestScriptForServices<br/>
+<a href="#Output-806842585" onClick='toggleBox("Output-806842585", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-806842585" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-806842585">
+I--Test Execution Starts.....<br/>
+Data is saved.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.CRM.ServicesTest.TestScriptForServices@50a638b5</td></tr>
+<tr>
+<td title='com.CRM.ServicesTest.TestScriptForServices.addServicesWithCredentials()'><b>addServicesWithCredentials</b><br>Test class: com.CRM.ServicesTest.TestScriptForServices<br/>
+<a href="#Output-689036161" onClick='toggleBox("Output-689036161", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-689036161" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-689036161">
+I--Test Execution Starts.....<br/>
+Data is saved.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.CRM.ServicesTest.TestScriptForServices@50a638b5</td></tr>
+<tr>
+<td title='com.CRM.LeadsTest.TestScriptForLeads.createLeads()'><b>createLeads</b><br>Test class: com.CRM.LeadsTest.TestScriptForLeads<br/>
+<a href="#Output-873134840" onClick='toggleBox("Output-873134840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-873134840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-873134840">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.CRM.LeadsTest.TestScriptForLeads@5e82df6a</td></tr>
+<tr>
+<td title='com.CRM.ContactTest.TestScriptForCont.createContact()'><b>createContact</b><br>Test class: com.CRM.ContactTest.TestScriptForCont<br/>
+<a href="#Output-516040753" onClick='toggleBox("Output-516040753", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-516040753" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-516040753">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.CRM.ContactTest.TestScriptForCont@21de60b4</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrgWithContact()'><b>createOrgWithContact</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-1198045532" onClick='toggleBox("Output-1198045532", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1198045532" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1198045532">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@3f197a46</td></tr>
+<tr>
+<td title='LearnTestNGScreenshots.TestNGScreenshot.amazonPage()'><b>amazonPage</b><br>Test class: LearnTestNGScreenshots.TestNGScreenshot<br/>
+<a href="#Output-1126522769" onClick='toggleBox("Output-1126522769", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1126522769" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1126522769">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>LearnTestNGScreenshots.TestNGScreenshot@31368b99</td></tr>
+<tr>
+<td title='com.CRM.ContactTest.TestScriptForCont.createContactWithDate()'><b>createContactWithDate</b><br>Test class: com.CRM.ContactTest.TestScriptForCont<br/>
+<a href="#Output-903218049" onClick='toggleBox("Output-903218049", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-903218049" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-903218049">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.CRM.ContactTest.TestScriptForCont@21de60b4</td></tr>
+<tr>
+<td title='com.CRM.ProductsTest.TestScriptForProducts.addProductWithDate()'><b>addProductWithDate</b><br>Test class: com.CRM.ProductsTest.TestScriptForProducts<br/>
+<a href="#Output-1341083542" onClick='toggleBox("Output-1341083542", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1341083542" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1341083542">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.CRM.ProductsTest.TestScriptForProducts@636be97c</td></tr>
+<tr>
+<td title='com.CRM.ContactTest.TestScriptForCont.createContactWithOrgCredentials()'><b>createContactWithOrgCredentials</b><br>Test class: com.CRM.ContactTest.TestScriptForCont<br/>
+<a href="#Output-1195854264" onClick='toggleBox("Output-1195854264", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1195854264" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1195854264">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>com.CRM.ContactTest.TestScriptForCont@21de60b4</td></tr>
+<tr>
+<td title='LearnConfigAnnotationsWithBaseClass.TestScriptForOrg.executeForCreatingOrg()'><b>executeForCreatingOrg</b><br>Test class: LearnConfigAnnotationsWithBaseClass.TestScriptForOrg<br/>
+<a href="#Output-2022798382" onClick='toggleBox("Output-2022798382", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2022798382" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2022798382">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LearnConfigAnnotationsWithBaseClass.TestScriptForOrg@50b472aa</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg()'><b>createOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-2017997342" onClick='toggleBox("Output-2017997342", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2017997342" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2017997342">
+I--Test Execution Starts.....<br/>
+I--Test Execution Skipped.....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_10365] but found [Facebook_1036]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:119)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2017997342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2017997342'><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_10365] but found [Facebook_1036]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:119)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>13</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@3f197a46</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg()'><b>createOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-1170482099" onClick='toggleBox("Output-1170482099", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1170482099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1170482099">
+I--Test Execution Starts.....<br/>
+I--Test Execution Skipped.....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_30095] but found [Facebook_3009]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:119)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1170482099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1170482099'><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_30095] but found [Facebook_3009]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:119)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>13</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@3f197a46</td></tr>
+<tr>
+<td title='LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact()'><b>executeForCreatingContact</b><br>Test class: LearnConfigAnnotationsWithBaseClass.TestScriptForContacts<br/>
+<a href="#Output-438248178" onClick='toggleBox("Output-438248178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-438248178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-438248178">
+I--Test Execution Starts.....<br/>
+I--Test Execution Skipped.....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [HRM] but found [Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM]
+	at LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact(TestScriptForContacts.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438248178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438248178'><pre>java.lang.AssertionError: expected [HRM] but found [Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact(TestScriptForContacts.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>LearnConfigAnnotationsWithBaseClass.TestScriptForContacts@6ca8564a</td></tr>
+<tr>
+<td title='LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact()'><b>executeForCreatingContact</b><br>Test class: LearnConfigAnnotationsWithBaseClass.TestScriptForContacts<br/>
+<a href="#Output-181765627" onClick='toggleBox("Output-181765627", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-181765627" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-181765627">
+I--Test Execution Starts.....<br/>
+I--Test Execution Skipped.....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [HRM] but found [Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM]
+	at LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact(TestScriptForContacts.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace181765627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace181765627'><pre>java.lang.AssertionError: expected [HRM] but found [Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at LearnConfigAnnotationsWithBaseClass.TestScriptForContacts.executeForCreatingContact(TestScriptForContacts.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>LearnConfigAnnotationsWithBaseClass.TestScriptForContacts@6ca8564a</td></tr>
+</table><p>
+</body>
+</html>
